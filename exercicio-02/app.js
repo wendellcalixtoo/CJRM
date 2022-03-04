@@ -64,7 +64,10 @@ const js = `${programmingLanguage.slice(0, 1)}${programmingLanguage.slice(
 */
 
 const mozilla = "Mozilla Developer Network";
-const mdn = `${mozilla.slice(0,1)}${mozilla.slice(8,9)}${mozilla.slice(18,19)}`
+const mdn = `${mozilla.slice(0, 1)}${mozilla.slice(8, 9)}${mozilla.slice(
+  18,
+  19
+)}`;
 
 // console.log(mdn.toLowerCase())
 
@@ -146,7 +149,7 @@ const harryPotterAuthor = "J.K. Rowling";
 
 const bestMovie = 'E o Oscar de melhor filme vai para: "La la land"!';
 
-const realBestMovie = bestMovie.replace("La la land", "Moonlight")
+const realBestMovie = bestMovie.replace("La la land", "Moonlight");
 
 // console.log(realBestMovie)
 
@@ -157,7 +160,9 @@ const realBestMovie = bestMovie.replace("La la land", "Moonlight")
 - Exiba a reminder no console. O resultado deve ser 1;
 */
 
+const reminder = 10 % 3;
 
+// console.log(reminder)
 
 /*
 16 - Comente o console.log acima, e,
@@ -168,6 +173,8 @@ const realBestMovie = bestMovie.replace("La la land", "Moonlight")
 */
 
 let episodes = 6;
+episodes++;
+// console.log(episodes)
 
 /*
 17 - Comente o console.log acima, e,
@@ -177,12 +184,18 @@ let episodes = 6;
 - O valor exibido no console deve ser 6.
 */
 
+episodes--;
+// console.log(episodes)
+
 /*
 18 - Comente o console.log acima, e,
 
 - Utilize o operador addition assignment para atualizar o valor da let "episodes" para 10;
 - Após a atribuição, exiba a let "episodes" no console.
 */
+
+episodes += 4;
+// console.log(episodes);
 
 /*
 19 - Comente o console.log acima, e,
@@ -191,6 +204,9 @@ let episodes = 6;
 - Insira a let "episodes" no lugar de "NUMERO_DE_EPISÓDIOS";
 - Exiba a "allEpisodes" no console.
 */
+
+const allEpisodes = `O nº de episódios é: ${episodes}`;
+// console.log(allEpisodes);
 
 /*
 20 - Comente o console.log acima, e,
@@ -201,7 +217,7 @@ let episodes = 6;
 - Não use template strings.
 */
 
-// const bookMessage = ''O Conto da Aia' é um dos livros mais vendidos da década.'
+const bookMessage = '\'O Conto da Aia\' é um dos livros mais vendidos da década.'
 // console.log(bookMessage)
 
 /*
@@ -217,6 +233,10 @@ let episodes = 6;
 
 const name = "walter white";
 
+let newName = name.replaceAll('w', 'W')
+
+// console.log(newName)
+
 /*
 22 - Comente o console.log acima, e,
 
@@ -226,3 +246,7 @@ const name = "walter white";
 - Não modifique a string da const "name";
 - Exiba a "newName" no console;
 */
+
+newName = `${newName}`
+
+console.log(newName)
