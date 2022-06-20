@@ -21,11 +21,21 @@
     5
 */
 
+// let counter = 0;
+// while (counter <= 5) {
+//   console.log(counter);
+//   counter++;
+// }
+
 /*
   02 - Comente a declaração da let e o loop acima e:
 
   - Utilizando um for loop, faça o mesmo que foi pedido no exercício 01.
 */
+
+// for (let i = 0; i <= 5; i++) {
+//   console.log(i);
+// }
 
 /*
   03 - Comente o loop acima e:
@@ -37,6 +47,15 @@
 
   "Esta é a Xª vez que esta frase é exibida no console."
 */
+// let counter = 1;
+// while (counter <= 10) {
+//   console.log(`Esta é a ${counter}ª vez que esta frase é exibida no console.`);
+//   counter++;
+// }
+
+// for (let i = 1; i <= 10; i++) {
+//   console.log(`Esta é a ${i}ª vez que esta frase é exibida no console.`);
+// }
 
 /*
   04 - Comente o loop acima e:
@@ -48,7 +67,20 @@
   - Para ver se deu certo, exiba o upperCaseCities no console.
 */
 
-const cities = ["São Paulo", "Rio de Janeiro", "Minas Gerais"];
+// const cities = ["São Paulo", "Rio de Janeiro", "Minas Gerais"];
+// let upperCaseCities = [];
+
+// for (let i = 0; i < cities.length; i++) {
+//   upperCaseCities.push(cities[i].toUpperCase());
+// }
+
+// let counter = 0;
+// while (counter < cities.length) {
+//   upperCaseCities.push(cities[counter].toUpperCase());
+//   counter++;
+// }
+
+// console.log(upperCaseCities);
 
 /*
   05 - Comente o console.log acima e:
@@ -59,7 +91,10 @@ const cities = ["São Paulo", "Rio de Janeiro", "Minas Gerais"];
     <li>João Grilo</li><li>Chicó</li><li>Rosinha</li>
 */
 
-const names = ["João Grilo", "Chicó", "Rosinha"];
+// const names = ["João Grilo", "Chicó", "Rosinha"];
+// for (let i = 0; i < names.length; i++) {
+//   console.log(`<li>${names[i]}</li>`);
+// }
 
 /*
   06 - Comente o console.log acima e:
@@ -70,7 +105,14 @@ const names = ["João Grilo", "Chicó", "Rosinha"];
   - O console deve exibir true.
 */
 
-const numbers = ["91", "5", "30", "97", "83", "31"];
+// const numbers = ["91", "5", "30", "97", "83", "31"];
+
+// let counter = 0;
+
+// for (let i = 0; i < numbers.length; i++) {
+//   counter = Number(numbers[i]) + counter;
+//   console.log(counter === 337);
+// }
 
 /*
   07 - Comente o console.log acima.
@@ -90,9 +132,20 @@ const numbers = ["91", "5", "30", "97", "83", "31"];
   Dica: você pode colocar um loop dentro do outro, ou seja, aninhá-los. =)
 */
 
-const arrays = [
-  [4, 32, 8],
-  [64, 8, 32],
-  [8, 32, 16],
-  [2, 8, 4],
-];
+// const arrays = [
+//   [4, 32, 8],
+//   [64, 8, 32],
+//   [8, 32, 16],
+//   [2, 8, 4],
+// ];
+
+// let counter = 0;
+
+// for (let i = 0; i < arrays.length; i++) {
+//   for (let index = 0; index < arrays[i].length; index++) {
+//     counter = arrays[i][index] + counter;
+//     if (counter === 218) {
+//       console.log(counter);
+//     }
+//   }
+// }
