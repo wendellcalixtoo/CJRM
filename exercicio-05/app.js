@@ -12,7 +12,7 @@
 
   - Utilizando um while loop, exiba no console todos os números entre 0 e 5,  
     inclusive esses dois.
-  - O resultado deve ser:
+  - O resultado deve ser:g
     0
     1
     2
