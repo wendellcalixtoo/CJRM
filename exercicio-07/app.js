@@ -5,7 +5,7 @@
   - O resultado exibido no console deve ser: false true.
 */
 
-console.log(true, false);
+console.log(!true, !false);
 
 /*
   02
@@ -17,6 +17,14 @@ console.log(true, false);
 */
 
 const animals = ["macaco", "tucano", "elefante", "pavão", "hipopótamo"];
+
+const hasLion = animals.includes("leão");
+
+if (!hasLion) {
+  console.log("Leão não existe no array animals.");
+} else {
+  console.log("Existe um leão no array animals.");
+}
 
 /*
   03
@@ -30,6 +38,20 @@ const animals = ["macaco", "tucano", "elefante", "pavão", "hipopótamo"];
 */
 
 const randomNumbers = [59, 61, 73, 57, 35, 73, 21, 87, 43];
+
+let currentNumber = 0;
+const numberLimit = 400;
+
+for (let i = 0; i < randomNumbers.length; i++) {
+  const number = randomNumbers[i];
+
+  if (currentNumber < numberLimit) {
+    currentNumber += number;
+    console.log(
+      `A soma ultrapassou ${numberLimit}. Até aqui, o valor atual é ${currentNumber}.`
+    );
+  }
+}
 
 /*
   04
@@ -50,6 +72,19 @@ const sentence = [
   "da",
   "sabedoria.",
 ];
+
+let newSentence = [];
+
+for (let i = 0; i < sentence.length; i++) {
+  const letra = sentence[i];
+
+  if (letra === "certeza") {
+    continue;
+  }
+  newSentence.push(letra);
+}
+
+// console.log(newSentence.join(" "));
 
 /*
   05
@@ -88,6 +123,32 @@ const randomValues = [
   null,
 ];
 
+let arrayStrings = [];
+let booleanCount = 0;
+let iterationCount = 0;
+
+for (let i = 0; i < randomValues.length; i++) {
+  const item = randomValues[i];
+
+  if (arrayStrings.length <= 4) {
+    if (typeof item === "string") {
+      arrayStrings.push(item);
+      continue;
+    }
+    if (typeof item === "boolean") {
+      booleanCount++;
+      continue;
+    }
+    iterationCount++;
+  }
+}
+
+console.log(`3 informações sobre o array randomValues:
+  - As primeiras 4 strings são ${arrayStrings[0]}, ${arrayStrings[1]}, ${arrayStrings[2]} e ${arrayStrings[3]};
+  - Até que as primeiras 4 strings fossem iteradas, ${booleanCount} booleans foram iterados;
+  - O array foi iterado por ${iterationCount} vezes.
+`);
+
 /*
   06
 
@@ -108,7 +169,25 @@ const randomValues = [
     da bebida além da que você escolheu.
 */
 
-// const drinkType
+const drinkType = "cachaca";
+
+switch (drinkType) {
+  case "água":
+    console.log(
+      "Substância química cujas moléculas são formadas por dois átomos de hidrogênio e um de oxigênio."
+    );
+    break;
+  case "refrigerante":
+    console.log(
+      "Bebida não alcoólica e não fermentada, fabricada industrialmente, à base de água mineral e açúcar."
+    );
+    break;
+  case "suco":
+    console.log("Bebida produzida do líquido extraído de frutos");
+    break;
+  default:
+    console.log("Bebida desconhecida.");
+}
 
 /*
   07
@@ -120,10 +199,13 @@ const randomValues = [
 
 const a = 2;
 
-// if (a === 0) {
-//   console.log(`O valor de "a" é ${a}`)
-// } else if (a === 1) {
-//   console.log(`O valor de "a" é ${a}`)
-// } else {
-//   console.log('O valor de "a" é qualquer número, exceto 0 e 1')
-// }
+switch (a) {
+  case 0:
+    console.log(`O valor de "a" é ${a}`);
+    break;
+  case 1:
+    console.log(`O valor de "a" é ${a}`);
+    break;
+  default:
+    console.log('O valor de "a" é qualquer número, exceto 0 e 1');
+}
