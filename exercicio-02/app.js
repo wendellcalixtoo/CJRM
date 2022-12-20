@@ -32,7 +32,7 @@ Utilize os espaços entre os comentários abaixo para executar os códigos dos e
 
 const tom = "Tom";
 const firstTom = "Hanks";
-const secondTom = "Cruise";
+const secondTom = "Cruisee";
 
 const myFavoriteTom = `${tom} ${firstTom}`;
 
