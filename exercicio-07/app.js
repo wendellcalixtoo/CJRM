@@ -5,7 +5,7 @@
   - O resultado exibido no console deve ser: false true.
 */
 
-console.log(!true, !false);
+// console.log(!true, !false);
 
 /*
   02
@@ -16,15 +16,15 @@ console.log(!true, !false);
   - Se existir, exiba no console a mensagem "Existe um leão no array animals.".
 */
 
-const animals = ["macaco", "tucano", "elefante", "pavão", "hipopótamo"];
+// const animals = ["macaco", "tucano", "elefante", "pavão", "hipopótamo"];
 
-const hasLion = animals.includes("leão");
+// const hasLion = animals.includes("leão");
 
-if (!hasLion) {
-  console.log("Leão não existe no array animals.");
-} else {
-  console.log("Existe um leão no array animals.");
-}
+// if (!hasLion) {
+//   console.log("Leão não existe no array animals.");
+// } else {
+//   console.log("Existe um leão no array animals.");
+// }
 
 /*
   03
@@ -37,21 +37,21 @@ if (!hasLion) {
   "A soma ultrapassou 400. Até aqui, o valor atual é RESULTADO_DA_SOMA."
 */
 
-const randomNumbers = [59, 61, 73, 57, 35, 73, 21, 87, 43];
+// const randomNumbers = [59, 61, 73, 57, 35, 73, 21, 87, 43];
 
-let currentNumber = 0;
-const numberLimit = 400;
+// let sumNumbers = 0;
 
-for (let i = 0; i < randomNumbers.length; i++) {
-  const number = randomNumbers[i];
-
-  if (currentNumber < numberLimit) {
-    currentNumber += number;
-    console.log(
-      `A soma ultrapassou ${numberLimit}. Até aqui, o valor atual é ${currentNumber}.`
-    );
-  }
-}
+// for (let index = 0; index < randomNumbers.length; index++) {
+//   const number = randomNumbers[index];
+  
+  
+//   if(sumNumbers + number <= 400){
+//     sumNumbers += number
+//   } else{
+//     console.log(`A soma ultrapassou 400. Até aqui, o valor atual é ${sumNumbers}.`)
+//     break
+//   }
+// }
 
 /*
   04
@@ -123,31 +123,32 @@ const randomValues = [
   null,
 ];
 
-let arrayStrings = [];
-let booleanCount = 0;
-let iterationCount = 0;
+// let arrayStrings = [];
+// let booleanCount = 0;
+// let iterationCount = 0;
 
-for (let i = 0; i < randomValues.length; i++) {
-  const item = randomValues[i];
+// for (let i = 0; i < randomValues.length; i++) {
+//   const item = randomValues[i];
 
-  if (arrayStrings.length <= 4) {
-    if (typeof item === "string") {
-      arrayStrings.push(item);
-      continue;
-    }
-    if (typeof item === "boolean") {
-      booleanCount++;
-      continue;
-    }
-    iterationCount++;
-  }
-}
+//   if (arrayStrings.length <= 4) {
+//     if (typeof item === "string") {
+//       arrayStrings.push(item);
+//       continue;
+//     }
+//     if (typeof item === "boolean") {
+//       booleanCount++;
+//       continue;
+//     }
+//     iterationCount++;
+//   }
+// }
 
-console.log(`3 informações sobre o array randomValues:
-  - As primeiras 4 strings são ${arrayStrings[0]}, ${arrayStrings[1]}, ${arrayStrings[2]} e ${arrayStrings[3]};
-  - Até que as primeiras 4 strings fossem iteradas, ${booleanCount} booleans foram iterados;
-  - O array foi iterado por ${iterationCount} vezes.
-`);
+// console.log(
+//   `3 informações sobre o array randomValues:
+//   - As primeiras 4 strings são ${arrayStrings[0]}, ${arrayStrings[1]}, ${arrayStrings[2]} e ${arrayStrings[3]};
+//   - Até que as primeiras 4 strings fossem iteradas, ${booleanCount} booleans foram iterados;
+//   - O array foi iterado por ${iterationCount} vezes.
+// `);
 
 /*
   06
@@ -169,25 +170,25 @@ console.log(`3 informações sobre o array randomValues:
     da bebida além da que você escolheu.
 */
 
-const drinkType = "cachaca";
+// const drinkType = "refrigerante";
 
-switch (drinkType) {
-  case "água":
-    console.log(
-      "Substância química cujas moléculas são formadas por dois átomos de hidrogênio e um de oxigênio."
-    );
-    break;
-  case "refrigerante":
-    console.log(
-      "Bebida não alcoólica e não fermentada, fabricada industrialmente, à base de água mineral e açúcar."
-    );
-    break;
-  case "suco":
-    console.log("Bebida produzida do líquido extraído de frutos");
-    break;
-  default:
-    console.log("Bebida desconhecida.");
-}
+// switch (drinkType) {
+//   case "água":
+//     console.log(
+//       "Substância química cujas moléculas são formadas por dois átomos de hidrogênio e um de oxigênio."
+//     );
+//     break;
+//   case "refrigerante":
+//     console.log(
+//       "Bebida não alcoólica e não fermentada, fabricada industrialmente, à base de água mineral e açúcar."
+//     );
+//     break;
+//   case "suco":
+//     console.log("Bebida produzida do líquido extraído de frutos");
+//     break;
+//   default:
+//     console.log("Bebida desconhecida.");
+// }
 
 /*
   07
@@ -197,15 +198,15 @@ switch (drinkType) {
     para testar o switch que você escreveu.
 */
 
-const a = 2;
+// const a = 1;
 
-switch (a) {
-  case 0:
-    console.log(`O valor de "a" é ${a}`);
-    break;
-  case 1:
-    console.log(`O valor de "a" é ${a}`);
-    break;
-  default:
-    console.log('O valor de "a" é qualquer número, exceto 0 e 1');
-}
+// switch (a) {
+//   case 0:
+//     console.log(`O valor de "a" é ${a}`);
+//     break;
+//   case 1:
+//     console.log(`O valor de "a" é ${a}`);
+//     break;
+//   default:
+//     console.log('O valor de "a" é qualquer número, exceto 0 e 1');
+// }
