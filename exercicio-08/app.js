@@ -40,6 +40,14 @@ const divNumbers = function (n1 = 10, n2 = 2)  {
   "Esta é a Xª vez que essa string é exibida."
 */
 
+// function myFunc(x = 0){
+//   for (let i = 1; i <= 7; i++) {
+//     console.log(`Esta é a ${i}ª vez que essa string é exibida.`)
+//   }
+// }
+
+// myFunc(10)
+
 /*
   04
 
@@ -52,6 +60,24 @@ const divNumbers = function (n1 = 10, n2 = 2)  {
 */
 
 const millennialWords = ['lol', 'yolo', 'troll', 'stalkear', 'selfie', 'influencer', 'crush', 'fitness', 'hater', 'bae', 'random', 'kawaii', 'outfit', 'mood', 'fail']
+
+const auxArray = []
+
+function newArray(array = []){
+  for (let i = 0; i < array.length; i++) {
+    const palavra = array[i];
+    
+    auxArray.push(palavra.toUpperCase())
+  }
+
+  return myArray(auxArray)
+}
+
+function myArray(newArray) {
+  console.log('--->', newArray)
+}
+
+newArray(millennialWords)
 
 /*
   05
@@ -70,7 +96,7 @@ const randomNumbers = [-2, 93, 34, -1, 1, 93, 11, -7, 47, -3]
 let positiveNumbers = 0
 let negativeNumbers = 0
 
-function validateNumbers (number) {
+function validateNumbers (number = 0) {
   if(number > 0){
     positiveNumbers++
 
@@ -86,8 +112,6 @@ for (let i = 0; i < randomNumbers.length; i++) {
   
   validateNumbers(number)
 }
-
-
 
 /*
   06
