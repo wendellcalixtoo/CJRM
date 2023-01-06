@@ -7,6 +7,12 @@
   - Exiba o resultado no console, sem inserir um console.log() dentro da função.
 */
 
+function multNumbers(n1 = 5, n2 = 2){
+  return n1 * n2
+}
+
+// console.log(multNumbers(7,3))
+
 /*
   02
 
@@ -14,6 +20,12 @@
     **function expression** que retorne o resultado da **divisão** entre esses  
     2 números.
 */
+
+const divNumbers = function (n1 = 10, n2 = 2)  {
+  return n1 / n2
+}
+
+// console.log(divNumbers(9,3))
 
 /*
   03
@@ -54,6 +66,29 @@ const millennialWords = ['lol', 'yolo', 'troll', 'stalkear', 'selfie', 'influenc
 
 const randomNumbers = [-2, 93, 34, -1, 1, 93, 11, -7, 47, -3]
 
+
+let positiveNumbers = 0
+let negativeNumbers = 0
+
+function validateNumbers (number) {
+  if(number > 0){
+    positiveNumbers++
+
+  } else {
+    negativeNumbers++
+  }
+
+  return console.log(`O array "randomNumbers" possui ${randomNumbers.length} números, sendo ${positiveNumbers} positivos e ${negativeNumbers} negativos.`)
+}
+
+for (let i = 0; i < randomNumbers.length; i++) {
+  const number = randomNumbers[i];
+  
+  validateNumbers(number)
+}
+
+
+
 /*
   06
 
@@ -64,7 +99,27 @@ const randomNumbers = [-2, 93, 34, -1, 1, 93, 11, -7, 47, -3]
     função.
 */
 
-// getOddNumbers([83, 52, 31, 73, 98, 37, 61, 56, 12, 24, 35, 3, 34, 80, 42])
+getOddNumbers([83, 52, 31, 73, 98, 37, 61, 56, 12, 24, 35, 3, 34, 80, 42])
+
+
+function getOddNumbers(myArray){
+  let oddNumbersArray = []
+  
+  for (let i = 0; i < myArray.length; i++) {
+    const number = myArray[i];
+    const isOddNumber = number % 2 !== 0
+
+    if(isOddNumber){
+      oddNumbersArray.push(number)
+    }
+    
+  }
+  return showMessage(oddNumbersArray)
+}
+
+function showMessage(message) {
+  return console.log(message)
+}
 
 /*
   07
@@ -102,3 +157,15 @@ const functions = [
   function () { return 'Índias' },
   function () { return 'Ocidentais.' }
 ]
+
+function joinFunctions(array){
+  let frase = ''
+
+  for (let i = 0; i < array.length; i++) {
+    const newFunction = array[i];    
+    frase += `${newFunction()} `
+  }
+  console.log(frase);
+}
+
+joinFunctions(functions)
