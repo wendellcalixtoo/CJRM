@@ -13,9 +13,11 @@
     valor no console.
 */
 
-function convertToString (value) {
-  return String(value)
-}
+const convertToString = value => String(value)
+
+console.log(convertToString(150))
+
+
 
 /*
   02
@@ -23,6 +25,10 @@ function convertToString (value) {
   - Crie uma função que retorne a quantidade de caracteres que uma string  
     recebida por parâmetro possui.
 */
+
+const stringLength = value => value.length
+
+console.log(stringLength('Fulano'))
 
 /*
   03
@@ -34,12 +40,24 @@ function convertToString (value) {
   "CHOCOTONE E OVO DE PÁSCOA JUNTOS NO MERCADO EM PLENO FEVEREIRO"
 */
 
+const convertToLowerCase = (frase) => frase.toLowerCase();
+
+const frase = 'CHOCOTONE E OVO DE PÁSCOA JUNTOS NO MERCADO EM PLENO FEVEREIRO'
+
+console.log(convertToLowerCase(frase))
+
 /*
   04
 
   - Crie uma função que recebe 2 parâmetros: um caractere e uma string;
   - Ao ser invocada, a função deve retornar o index do caractere na string.
 */
+
+const myFunc = (letra, palavra) =>  palavra.indexOf(letra) 
+
+console.log(myFunc('o', 'Fulano'));
+
+
 
 /*
   05
@@ -48,12 +66,20 @@ function convertToString (value) {
     passado por argumento existe no array (também passado por argumento).
 */
 
+const arrayCheck = (item, array) => array.includes(item)
+
+console.log(arrayCheck(5, [3,5,9]))
+
 /*
   06
 
   - Crie uma função que retorna a concatenação de 2 arrays, passados como  
     argumentos em sua invocação;
 */
+
+const concatFunction = (array1, array2) => array1.concat(array2)
+
+console.log(concatFunction([7,8,9], [1,2,3]))
 
 /*
   07
@@ -62,12 +88,22 @@ function convertToString (value) {
     mas com o último item removido.
 */
 
+const arrayNumbers = [1,2,3,4,5]
+
+const popArray = array => array.slice(0, array.length - 1);
+
+console.log(popArray(arrayNumbers))
+
 /*
   08
 
   - Crie uma função que retorna se o valor passado como argumento em sua  
     invocação é null.
 */
+
+const funcA = value => value === null
+
+console.log(funcA(null))
 
 /*
   09
@@ -79,6 +115,11 @@ function convertToString (value) {
     argumento a função que exibe seu nome no console e veja se o nome realmente  
     foi exibido.
 */
+
+// const a1 = (cb1) => cb1()
+
+
+
 
 /*
   10
@@ -101,6 +142,10 @@ function convertToString (value) {
 */
 
 const numbers = [1, 2, 3]
+
+ numbers.forEach((x,y,z) => {
+  console.log(`O ${y  + 1 }º item do array ${z} é ${x}.`)
+})
 
 /*
   12
@@ -145,6 +190,9 @@ const review = [
 ]
 
 let paragraphs = ''
+
+
+review.forEach(x => paragraphs += `<p>${x}</p>` )
 
 section.innerHTML = paragraphs
 
