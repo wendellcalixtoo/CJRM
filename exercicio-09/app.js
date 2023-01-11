@@ -116,8 +116,11 @@ console.log(funcA(null))
     foi exibido.
 */
 
-// const a1 = (cb1) => cb1()
+const invokerCallback = callback => callback()
 
+const logName = () => console.log('teste callback')
+
+invokerCallback(logName)
 
 
 
@@ -131,6 +134,12 @@ console.log(funcA(null))
   - Faça com que a invocação da função descrita no 1º item deste exercício (10)  
     resulte no triplo de 33.
 */
+
+// const invokerCallback2 = callback2 => callback2(number)
+
+// const outraFuncao = value => console.log( value * 3)
+
+// invokerCallback2(outraFuncao(11))
 
 /*
   11
